@@ -1,48 +1,4 @@
-/* @font-face {
-    font-family: cheek;
-    src: url(/Studyspace/misc/vogue/Vogue.ttf)
-}
 
-
-
-body{
-    display: grid;
-    
-}
-
-h1{
-    font-family: cheek;
-    font-size: 10rem;
-    letter-spacing: 9px; 
-    font-weight: 1;
-    font-stretch: condensed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
-    margin-bottom: 0%;
-}
-
- .nav{
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    
-}
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
-    margin-inline: 1%; 
-    border-color: 1px rgb(192, 179, 160);
-    background-color:rgb(227, 218, 205) ;
-    border-radius:8%;
-    text-decoration: none;
-    color: rgb(53, 53, 52);
-    padding: 0.5%;
-    
-} */
-
-/* Font */
 @font-face {
     font-family: cheek;
     src: url(/Studyspace/misc/vogue/Vogue.ttf);
@@ -57,42 +13,44 @@ body {
 
 h1 {
     font-family: cheek;
-    font-size: 10rem;
-    letter-spacing: 9px; 
+    font-size: 1rem;
     text-align: center;
     margin: 5% 0;
+    
 }
 
 .nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    
-   
-}
+    justify-content: space-between;
+    gap: 3%;
+    padding: 2%;
 
+}
+.linksmenu{
+    /* display: inline-block; */
+}
 .navbar {
     text-decoration: none;
     color: rgb(53, 53, 52);
-    padding: 0.5%;
     transition: color 0.3s;
     border-radius: 8%;
     background-color: rgb(227, 218, 205);
-    padding: 1%;
-    margin-bottom: 2%;
+    margin: 2%;
+    padding: 3%;
+  
 }
 
 .navbar:hover {
-    color: #000;
+    color: #b73838;
 }
 
 .hero {
     text-align: center;
-    padding: 5% 0;
+    padding: 20%;
     background: rgb(240, 240, 240);
 }
 
-.cta-btn {
+.button {
     background-color: rgb(192, 179, 160);
     color: white;
     border: none;
@@ -101,19 +59,13 @@ h1 {
     cursor: pointer;
 }
 
-.cta-btn:hover {
+.button:hover {
     background-color: rgb(170, 160, 140);
 }
 
 .about, .services, .gallery, .contact {
-    padding: 5% 10%;
+    padding:1% ;
     text-align: center;
-}
-
-.images img {
-    width: 30%;
-    margin: 1%;
-    border-radius: 10px;
 }
 
 .contact form {
@@ -124,24 +76,7 @@ h1 {
     margin: 0 auto;
 }
 
-.contact input, .contact textarea {
-    padding: 10px;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 5px;
-}
 
-.contact button {
-    background-color: rgb(192, 179, 160);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: rgb(170, 160, 140);
-}
 
 footer {
     text-align: center;
