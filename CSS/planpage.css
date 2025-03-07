@@ -1,0 +1,45 @@
+@font-face {
+    font-family: cheek;
+    src: url(/Studyspace/misc/vogue/Vogue.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: cheek;
+    font-size: 2em;
+    text-align: center;
+    margin: 2%;
+    font-family: cheek;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color:  rgb(227, 218, 205);
+
+}
+.navbar {
+    text-decoration: none;
+    color: rgb(53, 53, 52);
+    transition: color 0.3s;
+    border-radius: 8%;
+    background-color: rgb(227, 218, 205);
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.navbar:hover {
+    color: #b73838;
+}

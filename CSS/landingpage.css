@@ -13,21 +13,19 @@ body {
 
 h1 {
     font-family: cheek;
-    font-size: 1rem;
+    font-size: 2em;
     text-align: center;
-    margin: 5% 0;
-    
+    margin: 2%;
+    font-family: cheek;
 }
+
 
 .nav {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
-    padding: 2%;
+    align-items: center;
+   background-color:  rgb(227, 218, 205);
 
-}
-.linksmenu{
-    /* display: inline-block; */
 }
 .navbar {
     text-decoration: none;
@@ -35,9 +33,12 @@ h1 {
     transition: color 0.3s;
     border-radius: 8%;
     background-color: rgb(227, 218, 205);
-    margin: 2%;
-    padding: 3%;
-  
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .navbar:hover {
@@ -46,13 +47,20 @@ h1 {
 
 .hero {
     text-align: center;
-    padding: 20%;
-    background: rgb(240, 240, 240);
+    padding: 16%;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    font-family: cheek;
+    font-size: 2em;
+    background-image: url(/misc/Tablewithbooks.jpg);
+    
+    background-image: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.64)), url(/misc/Tablewithbooks.jpg);
+    
 }
 
 .button {
-    background-color: rgb(192, 179, 160);
-    color: white;
+    background-color: rgb(227, 218, 205);
+    color: rgb(71, 71, 71);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -63,7 +71,7 @@ h1 {
     background-color: rgb(170, 160, 140);
 }
 
-.about, .services, .gallery, .contact {
+.about, .services, .contact {
     padding:1% ;
     text-align: center;
 }
