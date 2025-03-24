@@ -18,31 +18,107 @@ h1 {
     margin: 2%;
     font-family: cheek;
 }
+li{
+    list-style: none;
+}
 
+header{
+    background-color:  rgb(227, 218, 205);
+}
 
-.nav {
+.navbar {
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   background-color:  rgb(227, 218, 205);
+   
 
 }
-.navbar {
+.nav-branding{
+    font-size:  2rem ;
+}
+a{
+    color: black;
     text-decoration: none;
-    color: rgb(53, 53, 52);
-    transition: color 0.3s;
-    border-radius: 8%;
-    background-color: rgb(227, 218, 205);
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 20px;
     border-style: solid;
-    border-width: 1px;
+    border-radius: 20px;
+    padding: 10%;
+}
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-.navbar:hover {
-    color: #b73838;
+.nav-menu.active{
+    display: flex;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    
+}
+
+.nav-link:hover{
+    color: rgb(201, 143, 106);
+    border-style: dashed;
+    
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    padding: 2%;
+    background-color: transparent;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+    
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    
+}
+
+@media(min-width:780px){
+    .hamburger{
+        display: none;
+    }
+
+  
+    .nav-menu{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        nav-left: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
 }
 
 .hero {
@@ -68,7 +144,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: rgb(170, 160, 140);
+    background-color: rgb(246, 223, 176);
 }
 
 .about, .services, .contact {
@@ -76,7 +152,7 @@ h1 {
     text-align: center;
 }
 
-.contact form {
+.contact  {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -91,3 +167,11 @@ footer {
     padding: 2% 0;
     background-color: rgb(227, 218, 205);
 }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+

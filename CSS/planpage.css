@@ -46,10 +46,8 @@ h1 {
 
 .navbar {
     text-decoration: none;
-    color: rgb(53, 53, 52);
     transition: color 0.3s;
     border-radius: 8%;
-    background-color: rgb(227, 218, 205);
     display: inline-block;
     margin-right: 10px;
     padding: 10px;
