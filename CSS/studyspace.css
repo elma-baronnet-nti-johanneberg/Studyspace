@@ -2,18 +2,16 @@
     font-family: cheek;
     src: url(/Studyspace/misc/vogue/Vogue.ttf);
 }
-
-html, body{
-    overflow-x: hidden;
-    width: 100vw;
+html, body {
+    overflow-x: hidden; 
+    width: 100vw; 
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-  
 
 }
 
@@ -28,7 +26,7 @@ li{
 }
 
 header{
-    background-color:  rgb(205, 227, 206);
+    background-color:   rgb(252, 174, 174) ;
     grid-area: hd;
     width: 100vw;
     min-height: 70 px;
@@ -36,21 +34,24 @@ header{
 }
 
 .navbar {
-    min-height: 60px;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-
+    max-width: 100%;
 }
+
 .nav-branding{
     font-size:  2rem ;
 }
+
 a{
     color: black;
     text-decoration: none;
     padding: 10%;
 }
+
 .nav-menu {
     display: none;
     position: absolute;
@@ -58,13 +59,15 @@ a{
     flex-direction: column;
     align-items: center;
     margin: 0;
+    max-width: 100%;
 }
 
 .nav-menu.active{
     display: flex;
     top: 60px;
-    background-color:rgb(205, 227, 206) ;
+    background-color: rgb(252, 174, 174) ;
     padding: 10%;
+   width: 100vw;
 }
 
 .nav-item{
@@ -126,12 +129,11 @@ a{
     color: rgb(255, 255, 255);
     background: rgb(255, 255, 255);
     font-family: cheek;
-    font-size: 2em;
+    font-size: 1.5rem;
     background-image: url(/misc/Tablewithbooks.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.64)), url(/misc/Tablewithbooks.jpg);
     
-}
-
+}  
 .button {
     background-color: rgb(227, 218, 205);
     color: rgb(71, 71, 71);
@@ -144,70 +146,12 @@ a{
 .button:hover {
     background-color: rgb(246, 223, 176);
 }
-.plan {
-    grid-area: title;
-}
 
-.plantitle{
-   margin-top:5% ;
-   grid-area: title;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: cheek;
-}
-
-.aside{
-    grid-area: aside;
-    border-style: solid;
-    border-width: 1px;
-    margin: 4%;
-    padding: 4%;
-}
-
-.table{
-    display: flex;
-    justify-content: center;
-    font-family: cheek;
-}
-
-.techniques{
-    margin: 2%;
-    background-color:rgb(205, 227, 206);
-    padding: 2%;
-    border-radius: 20px;
-    font-family: cheek;
-}
-
-.pomotech{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.start{
-    margin: 2%;
-    background-color:rgb(205, 227, 206);
-    padding: 2%;
-    border-radius: 20px;
-    font-family: cheek;
-}
 .footer{
     grid-area: ft;
     text-align: center;
     padding: 2% 0;
-    background-color:rgb(205, 227, 206) ;
-}
-.content{
-    transition: 0.2s ease;
-    font-family: cheek;
-}
-
-.content:hover{
-    color: rgb(201, 143, 106);
-}
-.content-links{
-    display: flex;
+    background-color:  rgb(252, 174, 174); 
 }
 
 @media(min-width:780px){
@@ -223,28 +167,15 @@ a{
         nav-left: 0;
         border: none;
     }
+
     .nav-item{
         margin: 16px 0;
     }
     .nav-menu.active{
         left: 0;
     }
-
-    body{
-        display: grid;
-        grid-template-columns: 20vw 80vw;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        'hd hd'
-        'hero hero'
-        'aside title'
-        'aside main'
-        'aside main'
-        'ft ft';
+    .hero{
+        font-size: 2em;
+        padding: 12%;
     }
-
-    .content-links{
-        flex-direction: column;
-    }
-    
 }

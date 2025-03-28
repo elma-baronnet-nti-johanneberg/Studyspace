@@ -7,31 +7,51 @@
     <title>Studyspace</title>
 </head>
 <body>
-    <header id="header">
-        
-        <nav class="nav">
-            <h1 class="nav-branding">Studyspace</h1>
-            <div class="menu">
-                <a class="navbar" href="/HTML/planpage.html">Planera</a> 
-                <a class="navbar" href="#comunity">Community</a>
-                <a class="navbar" href="#studyspace">Studyspace</a>
-                <a class="navbar" href="/HTML/landpage.html">Home</a>
+    <header>       
+        <nav class="navbar" >
+            <h1 class="title">Studyspace</h1>
+            
+          
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="/HTML/planpage.html">Planera</a> 
+                </li >
+                <li class="nav-item">
+                    <a class="nav-link" href="#comunity">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/HTML/studyspace.html">Studyspace</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/HTML/landpage.html">Home</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav> 
+        </nav>
     </header>
-    <div class="plan">
-        <h1 class="plantitle">Tips for planing your studies!</h1>
-    </div>
+    <script src="/JS/planpage.js"></script>
+
+    <section class="hero">
+        <h2>Tips för pluggandet!</h2>
+       
+        <button class="button">Skrolla för att se mer!</button>
+    </section>
+
     <aside class="aside">
-        <h3 class="Todo">To-do list:</h3>
-        <input type="checkbox" id="math">
-        <label for="math" id="label">Uppgift 300-315 i Matteboken</label> <br>
-        <input type="checkbox" id="math">
-        <label for="math" id="label">Planera Svensktexten</label> <br>
-        <input type="checkbox" id="math">
-        <label for="math" id="label">Läsa igenom fysikboken</label> <br>
+        <h3 class="table">Table of content</h3>
+        <ul class="content-links">
+            <li><a class="content" href="#main">Different techniques</a></li>
+            
+            <li><a class="content" href="#start">How to start</a></li>
+        </ul>
     </aside>
-    <main>
+
+    <main id="main">
         <div class="techniques">
             <h2>Different techniques</h2>
             <ol >
@@ -39,11 +59,35 @@
                     <div class="pomotech">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus saepe ut, cupiditate nemo aliquid quam itaque soluta maiores corporis consequatur aliquam excepturi? Adipisci enim vitae asperiores aliquam reprehenderit laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci officia molestias cum! Provident nemo impedit cupiditate possimus tempora libero placeat, blanditiis quasi, doloremque aspernatur tempore harum, magni excepturi deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident facilis earum reiciendis reprehenderit quia, accusantium obcaecati perspiciatis magnam veniam nam totam exercitationem laborum, debitis necessitatibus id quasi ab quibusdam.</p>
                         
-                        <img class="pomododroimg" src="/misc/pomodoro-technique-infographic-1024x1024.png" alt="Pomodoro techniques">
-                </div>
+                        
+                    </div>
                 </li>   
+                <li> Freyman techniques
+                    <div >
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, quia maxime sapiente et eos non minima quod dolorum ratione ex cum vero saepe eaque aliquid error culpa? Accusamus, perferendis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quisquam maxime numquam hic eos animi consequuntur, minus quae quas? Eos architecto itaque cupiditate dicta sequi nesciunt non sed libero eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex ipsam possimus, neque laborum illum blanditiis, soluta dolores quidem vero officiis itaque nihil exercitationem sequi. Voluptatum nam corrupti laborum iste. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore atque omnis aut minima sint debitis, voluptate magnam ea voluptates! Repudiandae esse reprehenderit magnam molestias, atque eligendi! Provident id facilis rerum.</p>
+                    </div>
+                </li>
             </ol>
         </div>
+        <div class="start" id="start">
+                <h2>How to start</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, exercitationem asperiores odio similique dignissimos eaque laudantium libero ullam pariatur cum. Obcaecati fugiat iure aliquam molestias doloribus similique praesentium? Saepe, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat debitis architecto fugit aliquam ratione quos illo sapiente provident, labore nesciunt placeat vitae nisi dolore maiores asperiores quod adipisci, neque ad.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam ducimus consequatur amet deleniti doloribus vel dolore error at, doloremque ad cumque voluptate sapiente impedit facere saepe nostrum eligendi maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa iure ipsa eaque facilis, ipsam commodi, assumenda labore corrupti eveniet recusandae nam. Nulla iure laboriosam tempore, accusantium deserunt expedita ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti adipisci aliquam laudantium voluptatibus dolorum laboriosam provident molestiae praesentium nulla explicabo velit facilis dolor, suscipit, veritatis nihil vero numquam tempora cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officiis enim at iure, soluta nostrum vitae! Beatae ipsum sit non deserunt. Exercitationem adipisci harum, minus dolore quisquam minima consectetur deleniti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, exercitationem asperiores odio similique dignissimos eaque laudantium libero ullam pariatur cum. Obcaecati fugiat iure aliquam molestias doloribus similique praesentium? Saepe, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat debitis architecto fugit aliquam ratione quos illo sapiente provident, labore nesciunt placeat vitae nisi dolore maiores asperiores quod adipisci, neque ad.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam ducimus consequatur amet deleniti doloribus vel dolore error at, doloremque ad cumque voluptate sapiente impedit facere saepe nostrum eligendi maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa iure ipsa eaque facilis, ipsam commodi, assumenda labore corrupti eveniet recusandae nam. Nulla iure laboriosam tempore, accusantium deserunt expedita ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti adipisci aliquam laudantium voluptatibus dolorum laboriosam provident molestiae praesentium nulla explicabo velit facilis dolor, suscipit, veritatis nihil vero numquam tempora cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officiis enim at iure, soluta nostrum vitae! Beatae ipsum sit non deserunt. Exercitationem adipisci harum, minus dolore quisquam minima consectetur deleniti.</p>
+
+
+        </div>
     </main>
+
+    <footer class="footer">
+        <section class="about" id="home">
+            <h3>Om oss</h3>
+            <p>Studyspace är en plattform där studenter kan planera, samarbeta och studera effektivt.</p>
+        </section>
+        <section class="contact" id="comunity">
+            <h3>Kontakt</h3>
+            <p>Study@space.tv</p>
+            <p>+46733703456</p>
+        </section>
+    </footer>
 </body>
 </html>
