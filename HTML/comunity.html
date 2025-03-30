@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/comunity.css">
     <title>Studyspace</title>
-    <link rel="stylesheet" href="/CSS/studyspace.css">
 </head>
 <body>
     <header>       
@@ -34,35 +34,34 @@
             </div>
         </nav>
     </header>
-  
-
     
-    <section class="hero">
-        <h2 id="demo">Välj en tid och starta timern för att börja plugga!</h2>
 
-        <select id="timerSelect">
-            <option value="1500">25 min</option>
-            <option value="1800">30 min</option>
-            <option value="2400">40 min</option>
-            <option value="3000">50 min</option>
-            <option value="3600">60 min</option>
-        </select>
-        
-        <button class="button" id="startTimer">Starta Timer</button>
-        <p id="timerDisplay">00:00</p>
+    <section class="hero">
+        <h2>Skapa en post och ställ en fråga när du har svårt för något!</h2>
+       
+        <button class="button">Skrolla för att se mer!</button>
     </section>
+
+    <section class="post-section">
+        <h2>Skapa en post</h2>
+        <textarea id="postInput" placeholder="Skriv något här..."></textarea>
+        <button class="button" id="postButton">Posta</button>
+    
+        <h2>Inlägg</h2>
+        <div id="postsContainer"></div>
+    </section>
+
     <footer class="footer">
         <section class="about" id="home">
             <h3>Om oss</h3>
             <p>Studyspace är en plattform där studenter kan planera, samarbeta och studera effektivt.</p>
         </section>
-    
         <section class="contact" id="comunity">
             <h3>Kontakt</h3>
             <p>Study@space.tv</p>
             <p>+46733703456</p>
         </section>
     </footer>
-    <script src="/JS/studyspace.js"></script>
+    <script src="/JS/comunity.js"></script>
 </body>
 </html>

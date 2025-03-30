@@ -1,17 +1,22 @@
+// skapar konstanter av classerna för att kunna använad de i js
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+// gör så att man kan trycka på hamburgarmenyn och den kommer fram
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   hamburger.classList.toggle("active");
 })
-
+// gör så att man kan ta bort menyn när man trycker på hamburgarmenyn igen
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=>{
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }))
 
-let timerInterval; // Global variabel för att lagra timern
+    
+// inte min kod. tagen från chat gpt: 
+let timerInterval; 
 
 document.getElementById("startTimer").addEventListener("click", function () {
     let selectedTime = parseInt(document.getElementById("timerSelect").value, 10); 

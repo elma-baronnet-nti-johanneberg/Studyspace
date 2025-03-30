@@ -1,19 +1,14 @@
+/* för att få in en ny font */
 @font-face {
     font-family: cheek;
     src: url(/Studyspace/misc/vogue/Vogue.ttf);
 }
 
-html, body{
-    overflow-x: hidden;
-    width: 100vw;
-}
 body {
-    font-family: Arial, sans-serif;
+    font-family: cheek;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-  
 
 }
 
@@ -28,20 +23,19 @@ li{
 }
 
 header{
-    background-color:  rgb(205, 227, 206);
+    background-color:  #cde3ce;
     grid-area: hd;
-    width: 100vw;
-    min-height: 70 px;
+    min-height: 70px;
     max-height: 100px;
 }
 
 .navbar {
-    min-height: 60px;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-
+    max-width: 100%;
 }
 .nav-branding{
     font-size:  2rem ;
@@ -58,13 +52,18 @@ a{
     flex-direction: column;
     align-items: center;
     margin: 0;
+    max-width: 100%;
+    justify-content: space-between;
 }
 
+
+/* hur menyn ser ut när den är acitve */
 .nav-menu.active{
     display: flex;
     top: 60px;
     background-color:rgb(205, 227, 206) ;
     padding: 10%;
+    width: 80vw;
 }
 
 .nav-item{
@@ -80,7 +79,6 @@ a{
 
 .nav-link:hover{
     color: rgb(201, 143, 106);
-    
     border: 0px;
     border-bottom: 3px;
     border-style: solid;
@@ -100,11 +98,10 @@ a{
     height: 3px;
     margin: 5px auto;
     background-color: black;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out
-    
 }
 
+/* Förändring av hamburgermenyn när den är aktiv */
 .hamburger.active .bar:nth-child(2){
     opacity: 0;
 
@@ -127,8 +124,8 @@ a{
     background: rgb(255, 255, 255);
     font-family: cheek;
     font-size: 2em;
-    background-image: url(/misc/Tablewithbooks.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.64)), url(/misc/Tablewithbooks.jpg);
+    background-image: url(/img/papperpavagg.png);
+    background-image: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.64)), url(/img/papperpavagg.png);
     
 }
 
@@ -173,10 +170,10 @@ a{
 
 .techniques{
     margin: 2%;
-    background-color:rgb(205, 227, 206);
     padding: 2%;
     border-radius: 20px;
     font-family: cheek;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .pomotech{
@@ -187,7 +184,7 @@ a{
 
 .start{
     margin: 2%;
-    background-color:rgb(205, 227, 206);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2%;
     border-radius: 20px;
     font-family: cheek;
@@ -210,6 +207,7 @@ a{
     display: flex;
 }
 
+/* Media queries för större skärmar */
 @media(min-width:780px){
     .hamburger{
         display: none;
@@ -220,8 +218,8 @@ a{
         display: flex;
         position: static;
         flex-direction: row;
-        nav-left: 0;
         border: none;
+        justify-content: flex-end;
     }
     .nav-item{
         margin: 16px 0;
@@ -239,7 +237,7 @@ a{
         'hero hero'
         'aside title'
         'aside main'
-        'aside main'
+        '2aside main'
         'ft ft';
     }
 
