@@ -15,7 +15,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
     
-// inte min kod. tagen från chat gpt: 
+// inte min kod. anpassad från chat gpt: 
 let timerInterval; 
 
 document.getElementById("startTimer").addEventListener("click", function () {

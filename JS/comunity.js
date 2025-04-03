@@ -14,7 +14,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }))
 
-// kod tagen från chat gpt: 
+// kod anpassad från chat gpt: 
 document.getElementById("postButton").addEventListener("click", function () {
     let postText = document.getElementById("postInput").value;
     
